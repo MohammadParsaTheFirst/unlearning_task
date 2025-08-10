@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files / Dataets directories
+# PyCharm project files / Virtual environments
+.idea/
+venv/
+env/
+data/
+# Model files and datasets
+*.pt
+*.h5
+*.ckpt
+*.pkl
+*.csv
+*.npz
+# OS-specific files
+.DS_Store
+Thumbs.db
+# Logs
+*.log
+# Git LFS tracked files (optional)
+*.lfs
