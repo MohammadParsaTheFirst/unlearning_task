@@ -172,8 +172,10 @@ def train_vae(dataset_name: str, num_epochs=100):
     print(f"Loss plot saved to VAE/loss_plot.png")
 
     # --- Step 6: Save model and class embedder ---
+    path = "./models/VAE"
     model_path = "./models/VAE/vae_final.pt"
     embedder_path = "./models/VAE/class_embedder.pt"
+    os.makedirs(path, exist_ok=True)
     torch.save(vae_model.state_dict(), model_path)
     torch.save(vae_model.class_embedder.state_dict(), embedder_path)
     print(f"CVAE model weights saved to {model_path}")
